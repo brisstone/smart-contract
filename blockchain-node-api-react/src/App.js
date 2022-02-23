@@ -19,6 +19,7 @@ function App() {
   return (
     <div>
       <ul>
+        CONTRACTS DETAILS:
         {contacts.map((contact) => (
           <li key={contact.id}>
             <p>Name: {contact.name}</p>
