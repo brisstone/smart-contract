@@ -17,7 +17,7 @@ contract Contacts {
 ///we added one contact to the contract by calling the createContact function, which is declared at the end of this contract class.
 ///We declared createContact and passed name and phone as parameters
   constructor() public {
-    createContact('Johnson Bris', '123123123');
+    createContact('Johnson Bris', '8989889');
   }
 
 ///We created map to add contacts in our contract.

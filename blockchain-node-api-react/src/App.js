@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <ul>
+      <ul style={{backgroundColor: 'blue'}}>
         CONTRACTS DETAILS:
         {contacts.map((contact) => (
           <li key={contact.id}>

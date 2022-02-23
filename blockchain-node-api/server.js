@@ -26,8 +26,9 @@ mongodb.connect(
     useUnifiedTopology: true,
   },
   async (err, client) => {
-    const db = client.db("Cluster0");
+    // const db = client.db("Cluster0");
     const accounts = await web3.eth.getAccounts();
+    console.log(accounts, 'duud')
 
     // web3 Contract function to connect with the smart contract
     const contactList = new web3.eth.Contract(
@@ -35,7 +36,10 @@ mongodb.connect(
       CONTACT_ADDRESS.CONTACT_ADDRESS
     );
 
-    routes(app, db, accounts, contactList);
+     console.log(contactList, "duud");
+    // routes(app, db, accounts, contactList);
+    routes(app, accounts, contactList);
+    
     app.listen(process.env.PORT || 5000, () => {
       console.log("listening on port " + (process.env.PORT || 5000));
     });
