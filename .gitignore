@@ -2,7 +2,7 @@
 
 # dependencies
 /blockchain-node-api/node_modules
-/blockchain-node-api/config.js
+# /blockchain-node-api/config.js
 /blockchain-node-api-react/node_modules
 /.pnp
 .pnp.js
